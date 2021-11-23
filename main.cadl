@@ -7,5 +7,5 @@ using Cadl.Http;
 @route("/hello")
 namespace Hello {
   @doc("Returns 'hi'")
-  op sayHi(): OkResponse<"hi">;
+  @get op sayHi(): OkResponse<"hi">;
 }
