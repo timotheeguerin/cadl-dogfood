@@ -6,7 +6,7 @@
   },
   "tags": [],
   "paths": {
-    "/hello/get": {
+    "/hello": {
       "get": {
         "operationId": "Hello_sayHi",
         "summary": "Returns 'hi'",

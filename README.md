@@ -34,7 +34,7 @@ Install the following extensions:
 - `cadl`: cadl extension, will provide error reporting and syntax highlighting for cadl files. To install that extension run
 
 ```bash
-cadl code
+cadl code install
 ```
 
 ## Getting started
@@ -58,3 +58,16 @@ cadl compile .
 ```bash
 cadl compile . --watch
 ```
+
+## Commnad summary
+
+| Action                   | Command                    |
+| ------------------------ | -------------------------- |
+| Help                     | `cadl --help`              |
+| Compile once             | `cadl compile .`           |
+| Compile in watch mode    | `cadl compile . --watch`   |
+| Format cadl code         | `cadl format **/*.cadl`    |
+| Install dependencies     | `cadl install`             |
+| Install dependencies     | `cadl install`             |
+| Install VSCode extension | `cadl code install`        |
+| Init a new project       | `cadl init [tempalateUrl]` |
