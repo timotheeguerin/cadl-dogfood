@@ -1,0 +1,11 @@
+import "@cadl-lang/rest";
+import "@cadl-lang/openapi3";
+
+using Cadl.Http;
+
+@doc("Hello world service")
+@route("/hello")
+namespace Hello {
+  @doc("Returns 'hi'")
+  op sayHi(): OkResponse<"hi">;
+}
