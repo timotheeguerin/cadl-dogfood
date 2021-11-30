@@ -1,0 +1,1 @@
+docker run -t -i -p 80:8080 -e SWAGGER_JSON=/app/cadl-output/openapi.json -v "${PWD}:/app" swaggerapi/swagger-ui

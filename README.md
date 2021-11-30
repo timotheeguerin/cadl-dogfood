@@ -53,7 +53,7 @@ cadl compile .
 
 3. Produced `openapi.json` in `./cadl-output` folder
 
-4. Dev with `--watch` to rebuild on changes
+4. Dev with `--watch` to rebuild on changes (Not working when using docker.)
 
 ```bash
 cadl compile . --watch
