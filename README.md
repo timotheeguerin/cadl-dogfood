@@ -59,7 +59,11 @@ cadl compile .
 cadl compile . --watch
 ```
 
-## Commnad summary
+5. Edit `main.cadl`. Hello world sample is laying there
+
+6. Optional (Needs docker): Run swagger ui on output openapi => `./swager-ui.sh`(Linux/MacOS) or `./swagger-ui.ps1` (Windows)
+
+## Command summary
 
 | Action                   | Command                    |
 | ------------------------ | -------------------------- |

@@ -1,6 +1,10 @@
 import "@cadl-lang/rest";
 import "@cadl-lang/openapi3";
 
+@serviceTitle("Hello world")
+@serviceVersion("0.1.0")
+namespace Demo.HelloWorld;
+
 using Cadl.Http;
 
 @doc("Hello world service")
