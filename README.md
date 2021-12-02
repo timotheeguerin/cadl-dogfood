@@ -37,6 +37,10 @@ Install the following extensions:
 cadl code install
 ```
 
+### Visual studio
+
+**NOTE: For Visual Studio, you must open the folder from the command-line (`devenv .` from the Cadl project folder) to inherit the proper environment.**
+
 ## Getting started
 
 1. Install cadl libraries for this project
