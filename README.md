@@ -2,6 +2,8 @@
 
 This is a repo containing a basic REST API project to get started with CADL.
 
+[**See notes for known issues and things to watch for**](#notes)
+
 ## Prerequisites
 
 ### [Required] Cadl cli/compiler
@@ -79,3 +81,10 @@ cadl compile . --watch
 | Install dependencies     | `cadl install`             |
 | Install VSCode extension | `cadl code install`        |
 | Init a new project       | `cadl init [tempalateUrl]` |
+
+## Notes
+
+1. When defining operations under a namespace the `@route` decorator is required on the namespace or it won't be discovered and emitted.
+1. You cannot define operations at the root of the file
+1. Issue with generic interface `interface Adoptable<TPet, TError> {}` that cannot be defined in the main file. Workaround is to define the generic interface in another file and import it. `import "./foo.cadl"`
+1. Do not remove the `import "@cadl-lang/openapi3"` import as this is what register the openapi emitter (Specially if copying one of the samples). Without it nothing gets emitted.
